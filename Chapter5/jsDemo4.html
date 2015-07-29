@@ -1,0 +1,29 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title> Examples</title>
+	<script src="angular.js"></script>
+	<script type="text/javascript">
+		function prntMess(unkwnObj){
+			if (angular.isFunction(unkwnObj)){
+				unkwnObj();
+			}
+			else{
+				console.log(unkwnObj);
+			}
+		}
+
+		var var1 = function sayHello(){
+			console.log("Waz up?");
+		};
+
+		var var2 = "See ya later!";
+
+		prntMess(var1);
+		prntMess(var2);
+	</script>
+</head>
+<body>
+	This is a simple example!
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title> Examples</title>
+	<script src="angular.js"></script>
+	<script type="text/javascript">
+		var myData = {
+			name:"Drew",
+			weather:"sunny",
+			assignName : function(nme){
+				this.name=nme;
+				},
+			printMessages : function(){
+				console.log("Hello " + this.name +".");
+				console.log("The weather is "+ this.weather);
+			}
+		};
+
+		var myExtendedObj = {
+			city: "London"
+		};
+
+		angular.extend(myExtendedObj, myData);
+
+		myExtendedObj.name = "Andrew";
+
+		myExtendedObj.printMessages();
+
+		myExtendedObj["weather"] = "rainny";
+
+		myExtendedObj.printMessages();
+		myExtendedObj.assignName("Bobby-extened-name");
+
+
+		console.log(myExtendedObj.name);
+		console.log(myExtendedObj.city);
+		console.log("Mydata.name after extend name changed "+ myData.name);
+	</script>
+</head>
+<body>
+	This is a simple example!
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title> Examples</title>
+	<script src="angular.js"></script>
+	<script type="text/javascript">
+		var myData = {
+			name:"Drew",
+			weather:"sunny",
+			assignName : function(nme){
+				this.name=nme;
+				},
+			printMessages : function(){
+					console.log("Hello " + this.name +".");
+					console.log("The weather is "+ this.weather);
+				}
+			};
+
+		myData.printMessages();
+
+		myData.assignName("Andrew");
+
+		myData.printMessages();
+	</script>
+</head>
+<body>
+	This is a simple example!
+</body>
+</html>

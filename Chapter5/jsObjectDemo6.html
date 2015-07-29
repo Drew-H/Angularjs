@@ -1,0 +1,34 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title> Examples</title>
+	<script src="angular.js"></script>
+	<script type="text/javascript">
+		var myData = {
+			name:"Drew",
+			weather:"sunny",
+			assignName : function(nme){
+				this.name=nme;
+				},
+			printMessages : function(){
+				console.log("Hello " + this.name +".");
+				console.log("The weather is "+ this.weather);
+			}
+		};
+
+
+		myData.date = "July 6th";
+
+		delete myData.name;
+
+		var hasName = "name" in myData;
+		var hasDate = "date" in myData;
+
+		console.log("Has name: "+ hasName);
+		console.log("Has date: "+hasDate);
+	</script>
+</head>
+<body>
+	This is a simple example!
+</body>
+</html>

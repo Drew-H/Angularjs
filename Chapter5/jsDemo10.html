@@ -1,0 +1,31 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title> Examples</title>
+	<script src="angular.js"></script>
+	<script type="text/javascript">
+		var myD = {
+			name: "Andrew",
+		};
+
+		console.log("Var: " + myD.weather);
+		console.log("Prop: "+ ("weather" in myD));
+
+		myD.weather = "Sunny";
+		console.log("Var: " + myD.weather);
+		console.log("Prop: "+ ("weather" in myD));
+
+		myD.weather = null;
+		console.log("Var: " + myD.weather);
+		console.log("Prop: "+ ("weather" in myD));
+
+		myD.weather = undefined;
+		console.log("Var: " + myD.weather);
+		console.log("Prop: "+ ("weather" in myD));
+
+	</script>
+</head>
+<body>
+	This is a simple example!
+</body>
+</html>

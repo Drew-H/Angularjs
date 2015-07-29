@@ -1,0 +1,24 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title> Examples</title>
+	<script src="angular.js"></script>
+	<script type="text/javascript">
+		var myData = new Object();
+		myData.name="Drew";
+		myData.weather="sunny";
+		myData.assignName = function(nme){
+			this.name=nme;
+		};
+
+		console.log("Hello " + myData.name +". The weather is " + myData.weather + " today.");
+
+		myData.assignName("Andrew");
+
+		console.log(myData.name);
+	</script>
+</head>
+<body>
+	This is a simple example!
+</body>
+</html>
